@@ -1,14 +1,29 @@
 .Div{
     display: flex;
     width: 800px;
-    height: 300px;
+    height: 250px;
     background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
 }
 .firstBox{
     width: 40%;
     height: 100%;
+   
 }
 .secondBox{
     width: 60%;
     height: 100%;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.bookButton{
+   margin-left: 80%;
+    
+    background-color: red;
 }
