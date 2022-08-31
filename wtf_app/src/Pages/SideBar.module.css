@@ -1,0 +1,28 @@
+.priceBox{
+    width: 50px;
+    margin-left: 5px;
+    height: 35px;
+}
+
+.locationBox{
+    height: 35px;
+    width: 160px;
+}
+
+.selectCity {
+    width: 160px;
+    height: 35px;
+}
+
+.mainDiv{
+    width: 300px;
+    height: 400px;
+    background-color: aquamarine;
+    margin-left: 20px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #080808; 
+}
+.container{
+    display: flex;
+}

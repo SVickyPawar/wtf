@@ -1,0 +1,14 @@
+.Div{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background-color: grey;
+}
+.firstBox{
+    width: 40%;
+    height: 100%;
+}
+.secondBox{
+    width: 60%;
+    height: 100%;
+}
