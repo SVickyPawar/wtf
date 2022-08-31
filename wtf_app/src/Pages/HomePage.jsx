@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import GymList from '../components/GymList'
+import Navbar from '../components/Navbar';
 import SideBar from "./SideBar"
 
 const HomePage = () => {
@@ -12,18 +13,21 @@ const HomePage = () => {
     useEffect(() => {
         fetch(url).then((res) => res.json()).then(data => setList(data.data))
     },[])
-  return (
-		<div style={{ display: "flex" }}>
-			<SideBar />
-			<div>
-				{list.map((el) => (
-					<div key={el.id}>
-						<GymList gym={el} />
+    return (
+        <>
+            <Navbar/>
+				<div style={{ display: "flex" }}>
+					<SideBar />
+					<div>
+						{list.map((el) => (
+							<div key={el.user_id}>
+								<GymList gym={el} />
+							</div>
+						))}
 					</div>
-				))}
-			</div>
-		</div>
-	);
+				</div>
+			</>
+		);
 }
 
 export default HomePage
