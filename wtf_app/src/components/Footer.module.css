@@ -1,0 +1,15 @@
+.footer{
+    font-family: sans-serif;
+    color: white;
+    background-color: #0f0c09;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.mediaIcons{
+    display: flex;
+    justify-content: space-around;
+}
+.footer>div{
+    /* width: 25%; */
+}

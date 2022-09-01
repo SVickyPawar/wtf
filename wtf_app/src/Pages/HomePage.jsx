@@ -1,7 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import GymList from '../components/GymList'
 import Navbar from '../components/Navbar';
-import SideBar from "./SideBar"
+import SideBar from "./SideBar";
+import Footer from '../components/Footer';
 
 const HomePage = () => {
 
@@ -25,7 +26,8 @@ const HomePage = () => {
 							</div>
 						))}
 					</div>
-				</div>
+			</div>
+			<Footer/>
 			</>
 		);
 }
