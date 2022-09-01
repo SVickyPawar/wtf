@@ -6,19 +6,32 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
 
-    const [list, setList] = useState([]);
+	const [list, setList] = useState([]);
+	const [city,setCity]=useState("")
 
-    console.log(list)
+	console.log(city);
+
+	const handleSelect = (a) => {
+		setCity(a);
+	};
+	
 
     const url ="https://devapi.wtfup.me/gym/nearestgym?lat=30.325488815850512&long=78.0042384802231";
-    useEffect(() => {
-        fetch(url).then((res) => res.json()).then(data => setList(data.data))
-    },[])
+	useEffect(() => {
+		if (city == "Noida") {
+			fetch("https://devapi.wtfup.me/gym/places?city=noida").then(res=>res.json()).then(data=>setList(data.data));
+		} else {
+			 fetch(url)
+					.then((res) => res.json())
+					.then((data) => setList(data.data));
+		}
+       
+    },[city])
     return (
         <>
             <Navbar/>
 				<div style={{ display: "flex" }}>
-					<SideBar />
+					<SideBar handleSelect={handleSelect} />
 					<div>
 						{list.map((el) => (
 							<div key={el.user_id}>
@@ -27,6 +40,21 @@ const HomePage = () => {
 						))}
 					</div>
 			</div>
+			{/* <div>
+				<div>
+					<h1>WTF Fitness Experience?</h1>
+					<p>@ Your Regular gym cost?</p>
+
+				</div>
+				<div>
+					<div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div> */}
 			<Footer/>
 			</>
 		);

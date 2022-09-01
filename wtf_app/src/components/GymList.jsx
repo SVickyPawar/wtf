@@ -4,7 +4,7 @@ import styles from './GymList.module.css'
 const GymList = ({ gym }) => {
     // const [rating, setRating] = useState(gym_rating);
    
-    console.log(gym,"gym");
+    //console.log(gym,"gym");
     return (
 			<div className={styles.Div}>
 				<div className={styles.firstBox}></div>

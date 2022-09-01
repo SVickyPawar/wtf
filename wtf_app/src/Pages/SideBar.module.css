@@ -1,24 +1,28 @@
 .priceBox{
-    width: 50px;
+    width: 80px;
     margin-left: 5px;
-    height: 35px;
+    height: 40px;
+    background-color: #2e2e2e;
+    color: hwb(0 96% 4% / 0.792);
 }
 
 .locationBox{
     height: 35px;
-    width: 160px;
+    width: 230px;
+    background-color: #2e2e2e;
 }
 
 .selectCity {
-    width: 160px;
-    height: 35px;
+    width: 220px;
+    height: 40px;
+    background-color: #2e2e2e;
 }
 
 .mainDiv{
     width: 300px;
     height: 400px;
     background-color: aquamarine;
-    margin-left: 20px;
+    margin-left: 40px;
     font-family: sans-serif;
     color: white;
     background-color: #080808; 

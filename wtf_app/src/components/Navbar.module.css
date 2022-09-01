@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
 }
 .logo{
@@ -11,7 +11,7 @@
 }
 
 .sections{
-    width: 50%;
+    width: 60%;
     display: flex;
     color: white;
     /* border: 1px solid red; */
@@ -21,6 +21,7 @@
 .sections>p{
     margin-left: 30px;
     cursor: pointer;
+    font-size: 17px;
 }
 
 .sections>button{
