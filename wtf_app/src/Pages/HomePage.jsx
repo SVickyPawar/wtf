@@ -40,21 +40,6 @@ const HomePage = () => {
 						))}
 					</div>
 			</div>
-			{/* <div>
-				<div>
-					<h1>WTF Fitness Experience?</h1>
-					<p>@ Your Regular gym cost?</p>
-
-				</div>
-				<div>
-					<div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-			</div> */}
 			<Footer/>
 			</>
 		);
